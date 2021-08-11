@@ -1642,6 +1642,30 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
+"@paypal/paypal-js@^4.0.6":
+  version "4.0.6"
+  resolved "https://registry.yarnpkg.com/@paypal/paypal-js/-/paypal-js-4.0.6.tgz#0f4c0ab8ebb48386c763497c38cf56108fd396d8"
+  integrity sha512-stmKvch8xm7qRx7XatArkxUDHaBB05fQpWwA4xXZRA5Dz/HrrbC6x5ttmNg1mYUP3EreLwmLC3xjTnFM3atpVw==
+  dependencies:
+    promise-polyfill "^8.2.0"
+
+"@paypal/react-paypal-js@^7.2.1":
+  version "7.2.1"
+  resolved "https://registry.yarnpkg.com/@paypal/react-paypal-js/-/react-paypal-js-7.2.1.tgz#c30ff16e3cb7d821d210874c4d74a78e898ee7a8"
+  integrity sha512-BJV3K2gIk+3dKxlG3O1uz81mROkXD+LLlzB29RIu+ujznR9Fzu+j6lSpnTlGAjZ4vNXAE3tqmSvkw7nD9VeQpQ==
+  dependencies:
+    "@paypal/paypal-js" "^4.0.6"
+    "@paypal/sdk-constants" "^1.0.107"
+
+"@paypal/sdk-constants@^1.0.107":
+  version "1.0.107"
+  resolved "https://registry.yarnpkg.com/@paypal/sdk-constants/-/sdk-constants-1.0.107.tgz#d204330aba1aedc86f917672326e52901479bd2e"
+  integrity sha512-b/F6zz9hwZ4//XjH8uKQksPQY5m9VQ0Zgi+5J6Zb2ys5LzQu9w1VxH++jdChUNEcYa2Nm3u4QwaJCGSyBsSprA==
+  dependencies:
+    cross-domain-utils "^2.0.10"
+    hi-base32 "^0.5.0"
+    zalgo-promise "^1.0.28"
+
 "@pmmmwh/react-refresh-webpack-plugin@^0.4.3":
   version "0.4.3"
   resolved "https://registry.yarnpkg.com/@pmmmwh/react-refresh-webpack-plugin/-/react-refresh-webpack-plugin-0.4.3.tgz#1eec460596d200c0236bf195b078a5d1df89b766"
@@ -3805,6 +3829,13 @@ create-require@^1.1.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/create-require/-/create-require-1.1.1.tgz#c1d7e8f1e5f6cfc9ff65f9cd352d37348756c333"
   integrity sha512-dcKFX3jn0MpIaXjisoRvexIJVEKzaq7z2rZKxf+MSr9TkdmHmsU4m2lcLojrj/FHl8mk5VxMmYA+ftRkP/3oKQ==
+
+cross-domain-utils@^2.0.10:
+  version "2.0.35"
+  resolved "https://registry.yarnpkg.com/cross-domain-utils/-/cross-domain-utils-2.0.35.tgz#c82f678dfa404dbe87a9bccbaf3a6a00ad624b73"
+  integrity sha512-UYrm3t5GB8ATFSqYeikR1yqY6vEFvPU0slvGW6PLkW2yzVAg13/tytww7ylu6C9J8aZCpEho4WgxhV3uZeEw0g==
+  dependencies:
+    zalgo-promise "^1.0.11"
 
 cross-fetch@3.1.4:
   version "3.1.4"
@@ -6701,6 +6732,11 @@ hex-color-regex@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/hex-color-regex/-/hex-color-regex-1.1.0.tgz#4c06fccb4602fe2602b3c93df82d7e7dbf1a8a8e"
   integrity sha512-l9sfDFsuqtOqKDsQdqrMRk0U85RZc0RtOR9yPI7mRVOa4FsR/BVnZ0shmQRM96Ji99kYZP/7hn1cedc1+ApsTQ==
+
+hi-base32@^0.5.0:
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/hi-base32/-/hi-base32-0.5.1.tgz#1279f2ddae2673219ea5870c2121d2a33132857e"
+  integrity sha512-EmBBpvdYh/4XxsnUybsPag6VikPYnN30td+vQk+GI3qpahVEG9+gTkG0aXVxTjBqQ5T6ijbWIu77O+C5WFWsnA==
 
 hicat@^0.8.0:
   version "0.8.0"
@@ -10057,6 +10093,11 @@ progress@^2.0.0, progress@^2.0.3:
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
   integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
 
+promise-polyfill@^8.2.0:
+  version "8.2.0"
+  resolved "https://registry.yarnpkg.com/promise-polyfill/-/promise-polyfill-8.2.0.tgz#367394726da7561457aba2133c9ceefbd6267da0"
+  integrity sha512-k/TC0mIcPVF6yHhUvwAp7cvL6I2fFV7TzF1DuGPI8mBh4QQazf36xCKEHKTZKRysEoTQoQdKyP25J8MPJp7j5g==
+
 prompts@2.4.0:
   version "2.4.0"
   resolved "https://registry.yarnpkg.com/prompts/-/prompts-2.4.0.tgz#4aa5de0723a231d1ee9121c40fdf663df73f61d7"
@@ -13193,6 +13234,11 @@ yurnalist@^2.1.0:
     is-ci "^2.0.0"
     read "^1.0.7"
     strip-ansi "^5.2.0"
+
+zalgo-promise@^1.0.11, zalgo-promise@^1.0.28:
+  version "1.0.47"
+  resolved "https://registry.yarnpkg.com/zalgo-promise/-/zalgo-promise-1.0.47.tgz#cda98035cc97f053a1ab799277102ccb54897013"
+  integrity sha512-n6d/Gdv3Fl8l7h062WpWjpNYdDh5OFAg/e3UUqxdjbdUi4qdFcfYLJvaPIMrofmrgU7vEJ8ApLdg+yUeYCA9WQ==
 
 zwitch@^1.0.0:
   version "1.0.5"
