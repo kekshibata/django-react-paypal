@@ -50,14 +50,3 @@ services:
       - "7000:7000"
     command: /start-docs
 
-  react:
-    build:
-      context: ./django_react_paypal/frontend
-      dockerfile: ./compose/local/Dockerfile
-      target: development
-    image: django_react_paypal_local_react
-    container_name: django_react_paypal_react
-    volumes:
-      - ./django_react_paypal/frontend/src:/app/src
-    ports:
-      - 3000:3000
